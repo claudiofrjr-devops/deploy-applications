@@ -115,7 +115,7 @@ env:
   ## key via a separately provisioned secret (see existingSecretName above).
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-rpc-secret/
   ##
-  DRONE_RPC_SECRET: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  #gerado no seu linux(no meu caso) a partir desse comando: openssl rand -hex 16 mesmo configurado no values do drone server
+  DRONE_RPC_SECRET: 61293d30ddf4ca6976fea4faeaf1a5ce  #gerado no seu linux(no meu caso) a partir desse comando: openssl rand -hex 16 mesmo configurado no values do drone server
   DRONE_LOGS_TRACE: true
 
   ## The hostname/IP (and optionally the port) for your Kubernetes runner. Defaults to the "drone"
@@ -127,7 +127,7 @@ env:
   ## The protocol to use for communication with Drone server.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-rpc-proto/
   ##
-  DRONE_RPC_PROTO: http
+  DRONE_RPC_PROTO: https
 
   ## Determines the default Kubernetes namespace for Drone builds to run in.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-namespace-default/
