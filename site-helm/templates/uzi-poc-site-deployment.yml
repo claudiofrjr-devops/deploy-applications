@@ -22,6 +22,6 @@ spec:
       containers:
       - name: site-poc-uzi
         imagePullPolicy: Always
-        image: lunavirtualnet/poc-site:1c924a2
+        image: lunavirtualnet/site-poc:latest
         ports:
         - containerPort: 80        
