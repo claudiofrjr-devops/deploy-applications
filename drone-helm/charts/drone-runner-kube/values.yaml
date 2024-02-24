@@ -42,13 +42,14 @@ service:
   type: ClusterIP
   port: 3000
 
+
 ingress:
   enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
+    - host: 4d4a-2804-431-cfd9-5858-fe13-93c0-3dba-a573.ngrok-free.app
       paths:
         - path: /
           pathType: Prefix
